@@ -19,6 +19,7 @@ jobs:
         with:
           packages: |
             any::tidyverse
+            any::janitor
 
       - name: Check R files load
         run: |
