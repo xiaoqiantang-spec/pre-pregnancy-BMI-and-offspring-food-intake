@@ -19,4 +19,4 @@ jobs:
 
       - name: Check R files load
         run: |
-          Rscript -e "files <- list.files(pattern='\\.R$', recursive=TRUE); for(f in files) { message('Checking ', f); source(f) }"
+          Rscript -e "files <- list.files(pattern='\\\\.R$', recursive=TRUE); for(f in files) { message('Checking ', f); source(f) }"
